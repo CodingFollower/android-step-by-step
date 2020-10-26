@@ -3,11 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: android step-by-step
+title: Blogs
 ---
 
-section 1
+Blogs
 ---
-* app生命周期
-
-[About](/about)
+{% for post in site.post %}
+* [{{ post.title }}]({{ post.url }})
+{% endfor %}
